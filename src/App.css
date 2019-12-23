@@ -15,8 +15,8 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
+  padding: 2rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -24,15 +24,75 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  margin: 2rem 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  border: 0;
+  outline: 0;
+  background-color: white;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  transition: all .2s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+button:hover {
+  background-color: #eee;
+}
+
+button:active {
+  transform: translateY(3px);
+}
+
+.Loader {
+  background-color: cornflowerblue;
+  font-size: 4rem;
+  color: white;
+  padding: 1rem;
+  border-radius: 3px;
+}
+
+.Error {
+  background-color: orangered;
+  font-size: 4rem;
+  color: white;
+  padding: 1rem;
+  border-radius: 3px;
+}
+
+.PostsSection {
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+.Post {
+  background-color: #eee;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+}
+
+.Post__Header {
+  display: flex;
+  justify-content: space-between;
+  font-size: .9rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.Post__Text {
+  font-size: .8rem;
+  font-weight: 300;
+  line-height: 1.6rem;
+  padding-top: 1rem;
 }
